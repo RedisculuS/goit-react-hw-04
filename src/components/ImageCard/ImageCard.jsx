@@ -3,7 +3,6 @@ import css from "./ImageCard.module.css";
 export const ImageCard = ({ images, onImageClick }) => {
   return (
     <div className={css.imageCardBox}>
-      {images.map((photo) => (
         <img
           className={css.imageCard}
           key={photo.id}
@@ -12,7 +11,6 @@ export const ImageCard = ({ images, onImageClick }) => {
           onClick={() => onImageClick(photo)}
           style={{ cursor: "pointer" }}
         />
-      ))}
     </div>
   );
 };
