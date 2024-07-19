@@ -1,16 +1,15 @@
 import css from "./ImageCard.module.css";
 
-export const ImageCard = ({ images, onImageClick }) => {
+export const ImageCard = ({ image, onImageClick }) => {
   return (
-    <div className={css.imageCardBox}>
-        <img
-          className={css.imageCard}
-          key={photo.id}
-          src={photo.urls.small}
-          alt={photo.description}
-          onClick={() => onImageClick(photo)}
-          style={{ cursor: "pointer" }}
-        />
+    <div >
+      <img
+        className={css.imageCard}
+        src={image.urls.small}
+        alt={image.description}
+        onClick={() => onImageClick(image)}
+        style={{ cursor: "pointer" }}
+      />
     </div>
   );
 };

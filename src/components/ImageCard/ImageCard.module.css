@@ -1,12 +1,8 @@
-.imageCardBox {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .imageCard {
-    padding: 10px;
-    width: 30%;
-    height: auto;
+   .imageCard {
+    width: 400px;
+    padding:10px;
+    height: 400px;
     object-fit: cover;
-  }
+   }
+
   
